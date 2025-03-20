@@ -84,10 +84,20 @@ console.log("Var and Let ----------")
 for(var i = 0; i < 5; i++){
     setTimeout(() => {
         console.log(i)
-    }, 3000);
+    }, 2000);
 }
 for(let i = 0; i < 5; i++){
     setTimeout(() => {
         console.log(i)
-    }, 3000);
+    }, 2000);
 }
+
+{
+    var varVariable = "Var scope"
+    let letVariable = "Let scope"
+
+    console.log(varVariable)
+    console.log(letVariable)
+}
+console.log(varVariable)
+//console.log(letVariable) //Not defined
